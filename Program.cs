@@ -26,7 +26,7 @@ namespace laborator3Ex9
             }
 
             double diagonala = Math.Sqrt(Math.Pow(lungime, 2) + Math.Pow(latime, 2)) ;
-            Console.WriteLine("Diagonala dreptunghiului este " + diagonala);
+            Console.WriteLine("Diagonala dreptunghiului este: " + diagonala);
         }
     }
 }

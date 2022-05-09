@@ -15,18 +15,19 @@ namespace laborator3Ex9
             Console.WriteLine("Introduceti latimea:");
             int latime = int.Parse(Console.ReadLine());
 
-            DiagonalaDreptunghi(lungime, latime);
-        }
-        static void DiagonalaDreptunghi(int lungime, int latime)
-        {
-            if (lungime<1||latime<1)
+            if (lungime < 1 || latime < 1)
             {
                 Console.WriteLine("Introduceti numere pozitive.");
                 return;
             }
 
-            double diagonala = Math.Sqrt(Math.Pow(lungime, 2) + Math.Pow(latime, 2)) ;
+            double diagonala = DiagonalaDreptunghi(lungime, latime);
             Console.WriteLine("Diagonala dreptunghiului este: " + diagonala);
+        }
+        static double DiagonalaDreptunghi(int lungime, int latime)
+        {
+            double diagonala = Math.Sqrt(Math.Pow(lungime, 2) + Math.Pow(latime, 2)) ;
+            return diagonala;
         }
     }
 }
